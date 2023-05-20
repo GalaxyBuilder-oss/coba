@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<head>
+	<title>Judul Login</title>
+	<link hresf="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="./stylesheet/login_style.css">
+	<link rel="stylesheet" href="./stylesheet/ionicons.min.css">
+	<link rel="stylesheet" href="./stylesheet/footer_style.css">
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script type="text/javascript">
+		document.addEventListener("DOMContentLoaded", function(){
+			  el_autohide = document.querySelector('.autohide');  
+			  // add padding-top to bady (if necessary)
+			  //navbar_height = document.querySelector('.navbar').offsetHeight;
+			  //document.body.style.paddingTop = navbar_height + 'px';
+
+			  if(el_autohide){
+				var last_scroll_top = 0;
+				window.addEventListener('scroll', function() {
+					  let scroll_top = window.scrollY;
+					 if(scroll_top < last_scroll_top) {
+						  el_autohide.classList.remove('scrolled-down');
+						  el_autohide.classList.add('scrolled-up');
+					  }
+					  else {
+						  el_autohide.classList.remove('scrolled-up');
+						  el_autohide.classList.add('scrolled-down');
+					  }
+					  last_scroll_top = scroll_top;
+				}); 
+				// window.addEventListener
+			  }
+			  // if
+
+			}); 
+			// DOMContentLoaded  end
+	</script>
+</head>
+<body>
+<nav class="autohide navbar navbar-expand-lg navbar-dark bg-primary">
+	 <div class="container-fluid">
+	   <img class="logo-web" src="site-logo.png" alt="Site-logo"/>
+	   <a class="navbar-brand" href="#">JUDUL WEBSITE</a>
+	   <div class="mode">        
+			<span class="change fa fa-facebook">OFF</span>
+		</div>
+		<script>
+		$( ".change" ).on("click", function() {
+		if( $( "body" ).hasClass( "dark" )) {
+			$( "body" ).removeClass( "dark" );
+			$( ".search-section .text" ).removeClass( "dark" );
+			$( ".sidebar .widget" ).removeClass( "dark" );
+			$( ".content" ).removeClass( "dark" );
+			$( ".change" ).text( "OFF" );
+		} else {
+			$( "body" ).addClass( "dark" );
+			$( ".sidebar .widget" ).addClass( "dark" );
+			$( ".search-section .text" ).addClass( "dark" );
+			$( ".content" ).addClass( "dark" );
+			$( ".change" ).text( "ON" );
+		}
+        });
+		</script>
+	   <span class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#main_nav">
+		  <div class="icons">
+			  <svg
+				width="26.5"
+				height="26.5"
+				viewBox="0 0 36 22"
+				xmlns="http://www.w3.org/2000/svg"
+				onclick="this.classList.toggle('active')"
+			  >
+				<g transform="matrix(1,0,0,1,-419.5,-274.131)">
+				  <g id="arrow_rocket">
+					<path
+					  id="top"
+					  d="M420,274.631L450,274.631C450,274.631 459.044,284.599 450,284.599C440.956,284.599 420,284.646 420,284.646L430.014,274.631"
+					/>
+					<g transform="matrix(1,-1.22465e-16,-1.22465e-16,-1,0,569.277)">
+					  <path
+						id="bottom"
+						d="M420,274.631L450,274.631C450,274.631 459.044,284.599 450,284.599C440.956,284.599 420,284.646 420,284.646L430.014,274.631"
+					  />
+					</g>
+					<g transform="matrix(1,0,0,1,0,-0.0234189)">
+					  <path id="middle" d="M420,284.646L450,284.646" />
+					</g>
+				  </g>
+				</g>
+			  </svg>
+			</div>
+	   </span>
+	  <div class="collapse navbar-collapse" id="main_nav">
+		<ul class="navbar-nav ms-auto">
+		<li class="nav-item"><a class="nav-link" href="#"> HOME </a></li>
+		<li class="nav-item dropdown">
+		<a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> MENU DROPDOWN 1 </a>
+		<ul class="dropdown-menu dropdown-menu-right">
+		  <li><a class="dropdown-item" href="#"> MENU 1 </a></li>
+		  <li><a class="dropdown-item" href="#"> MENU 2 </a></li>
+		  <li><a class="dropdown-item" href="#"> MENU 3 </a></li>
+		  <li><a class="dropdown-item" href="#"> MENU 4 </a></li>
+		  <li><a class="dropdown-item" href="#"> MENU 5 </a></li>
+		  <li><a class="dropdown-item" href="#"> MENU 6 </a></li>
+		</ul>
+		</li>
+		<li class="nav-item dropdown">
+		<a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> MENU DROPDOWN 2 </a>
+		<ul class="dropdown-menu dropdown-menu-right">
+		  <li><a class="dropdown-item" href="#"> MENU 1 </a></li>
+		  <li><a class="dropdown-item" href="#"> MENU 2 </a></li>
+		  <li><a class="dropdown-item" href="#"> MENU 3 </a></li>
+		  <li><a class="dropdown-item" href="#"> MENU 4 </a></li>
+		  <li><a class="dropdown-item" href="#"> MENU 5 </a></li>
+		</ul>
+		</li>
+		<li class="nav-item dropdown">
+		<a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> MENU DROPDOWN 3 </a>
+		<ul class="dropdown-menu dropdown-menu-right">
+		  <li><a class="dropdown-item" href="#"> MENU 1 </a></li>
+		  <li><a class="dropdown-item" href="#"> MENU 2 </a></li>
+		  <li><a class="dropdown-item" href="#"> MENU 3 </a></li>
+		  <li>
+		  <a class="dropdown-item" href="#"> MENU DROPDOWN 4 </a>
+			<!-- <ul class="dropdown-menu dropdown-submenu"> -->
+			  <!-- <li><a class="dropdown-item" href="#"> STRUKTUR ORGANISASI </a></li> -->
+			  <!-- <li><a class="dropdown-item" href="#"> KEGIATAN ALUMNI PUB </a></li> -->
+			  <!-- <li><a class="dropdown-item" href="#"> LEGALITAS </a></li> -->
+			<!-- </ul> -->
+		  </li>
+		</ul>
+		</li>
+		<li class="nav-item"><a class="nav-link" href="#"> ABOUT </a></li>
+		</ul>
+	    <div class="search-section">
+			<form class="search-form">
+				<input class="text" type="text" placeholder="Search for books, authors, categories and more..">
+				<input type="button" value="Search">
+			</form>
+		</div>
+	  </div> <!-- navbar-collapse -->
+	 </div> <!-- container-fluid -->
+	</nav>
+	<!-- akhir bagian menu -->
+<section class="vh-100">
+  <div class="container-fluid h-custom">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-md-9 col-lg-6 col-xl-5">
+        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
+          class="img-fluid" alt="Sample image">
+      </div>
+      <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+        <form>
+          <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
+            <p class="lead fw-normal mb-0 me-3">Sign in with</p>
+            <button type="button" class="btn btn-primary btn-floating mx-1">
+              <i class="ion-logo-facebook"></i>
+            </button>
+
+            <button type="button" class="btn btn-primary btn-floating mx-1">
+              <i class="ion-logo-twitter"></i>
+            </button>
+
+            <button type="button" class="btn btn-primary btn-floating mx-1">
+              <i class="ion-logo-linkedin"></i>
+            </button>
+          </div>
+
+          <div class="divider d-flex align-items-center my-4">
+            <p class="text-center fw-bold mx-3 mb-0">Or</p>
+          </div>
+
+          <!-- Email input -->
+          <div class="form-outline mb-4">
+            <input type="email" id="form3Example3" class="form-control form-control-lg"
+              placeholder="Enter a valid email address" />
+            <label class="form-label" for="form3Example3">Email address</label>
+          </div>
+
+          <!-- Password input -->
+          <div class="form-outline mb-3">
+            <input type="password" id="form3Example4" class="form-control form-control-lg"
+              placeholder="Enter password" />
+            <label class="form-label" for="form3Example4">Password</label>
+          </div>
+
+          <div class="d-flex justify-content-between align-items-center">
+            <!-- Checkbox -->
+            <div class="form-check mb-0">
+              <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3" />
+              <label class="form-check-label" for="form2Example3">
+                Remember me
+              </label>
+            </div>
+            <a href="#!" class="text-body">Forgot password?</a>
+          </div>
+
+          <div class="text-center text-lg-start mt-4 pt-2">
+            <button type="button" class="btn btn-primary btn-lg"
+              style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
+            <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a href="#!"
+                class="link-danger">Register</a></p>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+	<!-- Footer Area Start -->
+	<footer class="footer-07">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-12 text-center">
+					<h2 class="footer-heading"><a href="#" class="logo">JUDUL WEBSITE</a></h2>
+					<p class="menu">
+						<a href="#">MENU 1</a>
+						<a href="#">MENU 2</a>
+						<a href="#">MENU 3</a>
+						<a href="#">MENU 4</a>
+						<a href="#">MENU 5</a>
+					</p>
+					<ul class="ftco-footer-social p-0">
+		  <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><span class="ion-logo-twitter"></span></a></li>
+		  <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><span class="ion-logo-facebook"></span></a></li>
+		  <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><span class="ion-logo-instagram"></span></a></li>
+		</ul>
+				</div>
+			</div>
+			<div class="row mt-5">
+				<div class="col-md-12 text-center">
+					<p class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+				  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ion-ios-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a>
+				  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+				</div>
+			</div>
+		</div>
+	</footer>
+    <script src="./javascript/popper.js"></script>
+    <script src="./javascript/main.js"></script>
+	<!-- Footer -->
+    <!-- Footer Area End -->
+ <script type="text/javascript" src="./javascript/animate-scroll-back-top/jquery.backtothetop.js"></script>
+ <script type="text/javascript" src="./javascript/animate-scroll-back-top/jquery.backtothetop.min.js"></script>
+  <a href="#" id="backtothetop-fixed" data-backtothetop-scrolltop="0" data-backtothetop-fixed-bottom="20" data-backtothetop-fixed-right="4" class="btn-totop bg-primary off">Back To Top</a>
+</body>
+</html>

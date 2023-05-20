@@ -1,0 +1,23 @@
+@import url(./style.css);
+@import url(../assets/css/bootstrap.min.css)
+
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}
+.h-custom {
+height: calc(100% - 73px);
+	transition: all 0.5s ease;
+}
+@media (max-width: 960px) {
+.h-custom {
+	height: 100%;
+	transition: all 0.5s ease;
+}
+.h-custom img {
+	display: none;
+}
+}
